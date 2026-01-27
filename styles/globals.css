@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&family=Playfair+Display:wght@400;700&family=Lora:wght@400;700');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom utilities */
+html, body, #__next {
+  height: 100%;
+}
+
+:root {
+  /* --accent: theme('colors.secondary.DEFAULT'); */
+}
+
+/* Simple container */
+.container {
+  @apply mx-auto px-6;
+  max-width: 1100px;
+}
+
+#__next {
+  position: relative; /* Set context for absolute children */
+  overflow-x: hidden; /* Hide anything that slides off the horizontal edges */
+}
+
+@layer base {
+  html {
+    @apply font-sans;
+  }
+}
