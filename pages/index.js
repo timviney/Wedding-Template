@@ -3,7 +3,6 @@ import Protected from "../components/Protected";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Header from '../components/Header'
-import Image from 'next/image';
 import { WEDDING_DETAILS } from '../constants';
 
 const pageVariants = {
